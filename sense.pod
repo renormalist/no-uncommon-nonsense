@@ -3,7 +3,7 @@
 common::sense - save a tree AND a kitten, use common::sense!
 
 THIS VERSION IS A VARIANT WHICH TRIES TO SENSIBLY HANDLE NEWER
-PERL VERSIONS IN WHICH FEATURES GOT DEPRECATED. CURRENTLY IT TESTS
+PERL VERSIONS IN WHICH FEATURES GOT DEPRECATED. Currently it tests
 for 'switch' and imports 'Switch::Back' instead when Perl version
 is 5.41+.
 
