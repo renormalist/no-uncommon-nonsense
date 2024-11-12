@@ -6,7 +6,7 @@ WriteMakefile(
 	            COMPRESS	=> 'gzip -9v',
 	            SUFFIX	=> '.gz',
 	           },
-    NAME        => "common::sense",
+    NAME        => "no::uncommon::nonsense",
     VERSION_FROM => "sense.pm.PL",
     PM          => {
        "sense.pm"  => '$(INST_ARCHLIB)/common/sense.pm',
