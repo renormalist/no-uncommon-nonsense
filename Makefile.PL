@@ -12,6 +12,9 @@ WriteMakefile(
        "sense.pm"  => '$(INST_ARCHLIB)/common/sense.pm',
        "sense.pod" => '$(INST_LIB)/common/sense.pod',
     },
+    PREREQ_PM     => {
+          'Switch::Back' => '0',
+    },
     clean       => { FILES => "sense.pm" },
 );
 

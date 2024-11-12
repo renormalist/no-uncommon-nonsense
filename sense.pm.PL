@@ -11,9 +11,13 @@ use utf8;
 use strict qw(subs vars);
 
 BEGIN {
+   if ($] >= 5.010 && $] < 5.041) {
+      require feature;
+      feature->import (qw(switch));
+   }
    if ($] >= 5.010) {
       require feature;
-      feature->import (qw(say state switch));
+      feature->import (qw(say state));
    }
    if ($] >= 5.012) {
       feature->import (qw(unicode_strings));
@@ -21,6 +25,10 @@ BEGIN {
    if ($] >= 5.016) {
       feature->import (qw(current_sub fc evalbytes));
       feature->unimport (qw(array_base));
+   }
+   if ($] >= 5.041) {
+      require Switch::Back;
+      Switch::Back->import ();
    }
 
 }
